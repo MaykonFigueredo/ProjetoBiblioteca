@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Biblioteca.Models;
 using System.Linq;
-using Collections.Generic;
+using System.Collections.Generic;
 
 
 namespace Biblioteca.Controllers
@@ -32,9 +32,9 @@ namespace Biblioteca.Controllers
                 }
                 else
                 {
-                    controller.HttpContext.Session.SetString("Login", ListaUsuarioEncontrado[0].login);
+                    controller.HttpContext.Session.SetString("Login", ListaUsuarioEncontrado[0].Login);
                     controller.HttpContext.Session.SetString("Nome", ListaUsuarioEncontrado[0].Nome);
-                    controller.HttpContext.Session.SetInt32("Tipo", ListaUsuarioEncontrado[0].tipo);
+                    controller.HttpContext.Session.SetInt32("Tipo", ListaUsuarioEncontrado[0].Tipo);
                     return true;
 
                 }
