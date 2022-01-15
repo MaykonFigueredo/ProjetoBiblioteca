@@ -1,13 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Biblioteca.Models;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Http;
 
 namespace Biblioteca.Controllers
 {
-    public class UsuarioController : Controller
+    public class UsuariosController : Controller
     {
         // lista.......
 
-        public IActionResult listaDeUsuarios()
+        public IActionResult ListaDeUsuarios()
         {
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);
@@ -18,7 +20,7 @@ namespace Biblioteca.Controllers
 
         // Inserção.....
 
-         public IActionResult RegistarUsuario()
+         public IActionResult RegistarUsuarios()
         {
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);
@@ -28,7 +30,7 @@ namespace Biblioteca.Controllers
         }
         [HttpPost]
 
-         public IActionResult RegistarUsuario(Usuario novoUsuario)
+         public IActionResult RegistarUsuarios(Usuario novoUsuario)
         {
             novoUsuario.Senha = Criptografo.TextoCriptografado(novoUsuario.Senha);
             new UsuarioService().IncluirUsuario(novoUsuario);
@@ -46,7 +48,7 @@ namespace Biblioteca.Controllers
 
         //Edição......
 
-        public IActionResult editarUsuario(int id)
+        public IActionResult EditarUsuario(int id)
         {
             Usuario u = new UsuarioService().Listar(id);
             return View(u);
@@ -54,7 +56,7 @@ namespace Biblioteca.Controllers
 
         [HttpPost]
 
-         public IActionResult editarUsuario(Usuario userEditado)
+         public IActionResult EditarUsuario(Usuario userEditado)
         {
             new UsuarioService().editarUsuario(userEditado);
             return RedirectToAction("ListaDeUsuarios");
@@ -62,7 +64,7 @@ namespace Biblioteca.Controllers
 
         // Exclusão ....
 
-        public IActionResult excluirUsuario(string decisao,int id)
+        public IActionResult ExcluirUsuario(string decisao,int id)
         {
             if(decisao=="Excluir")
             {
@@ -76,9 +78,6 @@ namespace Biblioteca.Controllers
                 return View("ListaDeUsuarios", new UsuarioService().Listar());
             }
         }
-
-
-
 
         // Funções Estras ...... 
         public IActionResult Sair()

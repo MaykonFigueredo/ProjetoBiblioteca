@@ -14402,6 +14402,16 @@
   "RootNamespace": "Biblioteca",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\listaDeUsuarios.cshtml",
+      "TargetPath": "Views\\Usuarios\\listaDeUsuarios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\ExcluirUsuario.cshtml",
+      "TargetPath": "Views\\Usuarios\\ExcluirUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14432,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\RegistrarUsuario.cshtml",
+      "TargetPath": "Views\\Usuarios\\RegistrarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Emprestimo\\Cadastro.cshtml",
       "TargetPath": "Views\\Emprestimo\\Cadastro.cshtml",
       "FileKind": "mvc"
@@ -14452,6 +14467,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\EditarUsuario.cshtml",
+      "TargetPath": "Views\\Usuarios\\EditarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14462,8 +14482,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\NeedAdmin.cshtml",
+      "TargetPath": "Views\\Usuarios\\NeedAdmin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Livro\\Cadastro.cshtml",
       "TargetPath": "Views\\Livro\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Maykon\\Desktop\\CURSO SENAC TI\\Biblioteca\\Views\\Usuarios\\CadastroRealizado.cshtml",
+      "TargetPath": "Views\\Usuarios\\CadastroRealizado.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,3 +1,4 @@
+using System;
 using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -38,6 +39,8 @@ namespace Biblioteca.Controllers
                 objFiltro.Filtro = filtro;
                 objFiltro.TipoFiltro = tipoFiltro;
             }
+                
+
             LivroService livroService = new LivroService();
             return View(livroService.ListarTodos(objFiltro));
         }
